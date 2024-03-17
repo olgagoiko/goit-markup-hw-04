@@ -86,12 +86,13 @@ address {
     color: #2e2f42;
     display: block;
     padding: 24px 0;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link:hover,
 .nav-link:focus {
     color: #404bbf;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
 .current {
@@ -126,12 +127,13 @@ bottom: -1px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-link:hover,
 .address-link:focus {
     color: #404bbf;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
 .hero {
@@ -143,6 +145,7 @@ bottom: -1px;
     background-position: center;
     margin: 0 auto;
     background-size: cover;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     }
 
 .hero-container {
@@ -180,6 +183,10 @@ bottom: -1px;
     cursor: pointer;
 }
 
+.link {
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+}
+
 .link:hover,
 .link:focus {
     font-size: 16px;
@@ -187,6 +194,7 @@ bottom: -1px;
     color: #fff;
     background: #404bbf;
     cursor: pointer;
+    
 }
 
 .solutions {
@@ -223,13 +231,14 @@ width: 264px;
 height: 112px;
 background: #f4f4fd;
 position: relative;
+margin-bottom: 8px;
 }
 
 .special-icon {
     position: absolute;
     top: 24px;
     left: 100px;
-    }
+}
 
 .solutions-subtitle {
     font-weight: 500;
@@ -279,6 +288,7 @@ position: relative;
     background: #fff;
     width: calc((100% - 72px) / 4);
     border-radius: 0px 0px 4px 4px;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .team-name-text {
@@ -303,6 +313,60 @@ position: relative;
     text-align: center;
     color: #434455;
 
+}
+
+.team-icon {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 8px;
+}
+
+.social-icon {
+    display: flex;
+    gap: 24px;
+    fill: #fff;
+}
+
+
+
+.instagram-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4d5ae5;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.twitter-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4d5ae5;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.facebook-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4d5ae5;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.lincedin-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4d5ae5;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
 }
 
 .portfolio {
@@ -335,7 +399,39 @@ position: relative;
     letter-spacing: 0.02em;
     color: #434455;
     width: calc((100% - 48px) / 3);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+    position: relative;
+    
 }
+.portfolio-item:hover {
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    
+}
+
+.overlay {
+    
+    font-size: 16px;
+    line-height: 24px; 
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 360px;
+    height: 300px;
+    transform: translateY(150%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background: #4d5ae5;
+    padding: 40px 32px 164px;
+}
+
+.portfolio-item:hover .overlay {
+    transform: translateY(0);
+    cursor: pointer;
+}
+
 
 .portfolio-name-image {
     border: 1px solid #e7e9fc;
@@ -364,7 +460,18 @@ position: relative;
 .footer {
     background: #2e2f42;
     padding: 100px 0;
+    display: flex;
+   text-align: center;
 }
+
+.footer-container {
+   padding-left: 156px;
+   margin-left: 0;
+   margin-right: 120px;
+   padding-right: 0;
+}
+
+
 
 .footer-partlogo {
     color: #f4f4fd;
@@ -375,7 +482,7 @@ position: relative;
 }
 
 .logo-footer {
-    display: inline-block;
+    display: block;
     margin-bottom: 16px;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -392,4 +499,19 @@ position: relative;
     letter-spacing: 0.02em;
     color: #f4f4fd;
     max-width: 264px;
+}
+.social-media {
+    font-weight: 500;
+font-size: 16px;
+line-height: 24px; 
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: #fff;
+}
+
+.footer-icon {
+    display: flex;
+    gap: 16px;
+    fill: #fff;
+    margin-top: 16px;
 }
