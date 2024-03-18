@@ -446,6 +446,10 @@ address {
     gap: 120px;
 }
 
+.footer-logo-text {
+    margin-right: 120px
+}
+
 .footer-container {
     display: flex;
     align-items: baseline;
