@@ -67,7 +67,6 @@ address {
     text-transform: uppercase;
     color: #4d5ae5;
     margin-right: 76px;
-    width: 115px;
 }
 
 .logo-part {
@@ -236,14 +235,7 @@ address {
     width: 264px;
     height: 112px;
     background: #f4f4fd;
-    position: relative;
     margin-bottom: 8px;
-}
-
-.special-icon {
-    position: absolute;
-    top: 24px;
-    left: 100px;
 }
 
 .solutions-subtitle {
@@ -269,7 +261,8 @@ address {
 }
 
 .team-title {
-    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
@@ -286,11 +279,6 @@ address {
 }
 
 .team-item {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
     background: #fff;
     width: calc((100% - 72px) / 4);
     border-radius: 0px 0px 4px 4px;
@@ -319,7 +307,7 @@ address {
     letter-spacing: 0.02em;
     text-align: center;
     color: #434455;
-
+    margin-bottom: 8px;
 }
 
 .social-icon {
@@ -453,17 +441,19 @@ address {
     text-align: center;
 }
 
+.footer-list {
+    display: flex;
+    gap: 120px;
+}
+
 .footer-container {
     display: flex;
     align-items: baseline;
     padding-left: 156px;
     margin-left: 0;
-    margin-right: 120px;
+    margin-right: 0;
     padding-right: 0;
-}
 
-.footer-logo {
-    margin-right: 120px;
 }
 
 .footer-partlogo {
@@ -483,7 +473,7 @@ address {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-
+    text-align: left;
 }
 
 .footer-text {
@@ -492,9 +482,13 @@ address {
     letter-spacing: 0.02em;
     color: #f4f4fd;
     max-width: 264px;
+    text-align: left;
 }
 
+
+
 .social-media {
+    font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
@@ -502,6 +496,7 @@ address {
     letter-spacing: 0.02em;
     color: #fff;
     margin-bottom: 16px;
+    text-align: left;
 }
 
 .footer-icon {
