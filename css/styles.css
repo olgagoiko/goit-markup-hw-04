@@ -437,8 +437,7 @@ address {
 .footer {
     background: #2e2f42;
     padding: 100px 0;
-    display: flex;
-    text-align: center;
+    
 }
 
 .footer-list {
@@ -453,11 +452,6 @@ address {
 .footer-container {
     display: flex;
     align-items: baseline;
-    padding-left: 156px;
-    margin-left: 0;
-    margin-right: 0;
-    padding-right: 0;
-
 }
 
 .footer-partlogo {
